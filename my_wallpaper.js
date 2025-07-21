@@ -1,6 +1,10 @@
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 30;
+let pupilsize = 20;
+let triX1 = 90;
+let triX2 = 110;
+let pupilheight = 100;
+let colourheight = 100;
+
 
 
 function setup_wallpaper(pWallpaper) {
@@ -17,9 +21,25 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(240, 255, 240); //light honeydew green colour
+  background(108,200,250); //light blue colour
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  rect(40 ,40, rect_width, rect_height);
+  eye()
+}
+
+function eye(){
+noStroke()
+  ellipse(100, 100, 50)
+  triangle(triX1,77,triX1,123,55,100)
+  triangle(triX2,77,triX2,123,145,100)//eyeshape
+  
+  
+  
+  fill(255,233,108)
+  ellipse(100,colourheight,35)//eyecolour
+
+  fill(0)
+  ellipse(100,pupilheight,pupilsize)//pupil
+
 }
