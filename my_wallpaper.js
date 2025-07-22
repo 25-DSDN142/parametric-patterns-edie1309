@@ -35,11 +35,15 @@ noStroke()
   triangle(triX2,77,triX2,123,145,100)//eyeshape
   
   
-  
-  fill(255,233,108)
+  fill(255,233,108)//yellow
+  //fill(53, 130, 70)//green
   ellipse(100,colourheight,35)//eyecolour
 
   fill(0)
   ellipse(100,pupilheight,pupilsize)//pupil
 
+  fill (230)
+  ellipse(103,95,5)
+
 }
+
