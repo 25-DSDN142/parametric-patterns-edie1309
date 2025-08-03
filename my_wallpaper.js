@@ -59,6 +59,7 @@ function cirlcecollection(){
   fill(245, 236, 218) 
   ellipse (47, 60, 15) //ornage pupil 
 
-  fill()
+  fill(109, 184, 191)
+  ellipse (45,27,25)
 
 }
