@@ -21,7 +21,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(245, 236, 218); //light CREam colour
+  background(255, 247, 240); //light CREam colour
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
@@ -37,7 +37,7 @@ noStroke()
   
   
   //fill(255,233,108)//yellow
-  fill(53, 130, 70)//green
+  fill(163, 187, 26)//green
   ellipse(100,colourheight,35)//eyecolour
 
   fill(0)
@@ -51,15 +51,19 @@ function cirlcecollection(){
   noStroke()
   fill (224, 133, 141)// pink
   ellipse(30, 45, 25)
-  fill (245, 236, 218)// indside of cirlce pink
+  fill (255, 247, 240)// indside of cirlce pink
   ellipse(27, 45, 10)
 
   fill (242, 114, 2)
   ellipse (43, 60, 28)
-  fill(245, 236, 218) 
+  fill(255, 247, 240) 
   ellipse (47, 60, 15) //ornage pupil 
 
   fill(109, 184, 191)
   ellipse (45,27,25)
+  fill(255, 247, 240)
+  ellipse(45,25,12)//bluecicle
+
+
 
 }
