@@ -21,7 +21,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(108,200,250); //light blue colour
+  background(245, 236, 218); //light CREam colour
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
@@ -49,6 +49,9 @@ noStroke()
 }
 function eye2(){
   noStroke()
-  ellipse(40, 45, 25)
-  triangle
+  fill (224, 133, 141)
+  ellipse(30, 45, 25)
+  
+  fill (245, 236, 218)
+  ellipse(27, 45, 10)
 }
