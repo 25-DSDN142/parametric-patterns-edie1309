@@ -8,8 +8,8 @@ let colourheight = 100;
 
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
-  //pWallpaper.output_mode(GRID_WALLPAPER);
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
@@ -26,7 +26,7 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
   eye()
-  eye2()
+  cirlcecollection()
 }
 
 function eye(){
@@ -47,11 +47,18 @@ noStroke()
   ellipse(103,95,5)
 
 }
-function eye2(){
+function cirlcecollection(){
   noStroke()
-  fill (224, 133, 141)
+  fill (224, 133, 141)// pink
   ellipse(30, 45, 25)
-  
-  fill (245, 236, 218)
+  fill (245, 236, 218)// indside of cirlce pink
   ellipse(27, 45, 10)
+
+  fill (242, 114, 2)
+  ellipse (43, 60, 28)
+  fill(245, 236, 218) 
+  ellipse (47, 60, 15) //ornage pupil 
+
+  fill()
+
 }
