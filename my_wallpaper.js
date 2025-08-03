@@ -8,8 +8,8 @@ let colourheight = 100;
 
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
-  //pWallpaper.output_mode(GRID_WALLPAPER);
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
   
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
@@ -22,20 +22,35 @@ function setup_wallpaper(pWallpaper) {
 
 function wallpaper_background() {
   background(255, 247, 240); //light CREam colour
+
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
+  eyeshape()
   eye()
-  cirlcecollection()
+  circlepink()
+  circleorange()
+  circleblue()
+  circlelightgreen()
+  c2green()
 }
 
-function eye(){
-noStroke()
+function eyeshape(){
+strokeWeight(4)
+stroke(100)
+  ellipse(100, 100, 50)
+  triangle(triX1,77,triX1,123,55,100)
+  triangle(triX2,77,triX2,123,145,100)
+
+
+  noStroke()
   ellipse(100, 100, 50)
   triangle(triX1,77,triX1,123,55,100)
   triangle(triX2,77,triX2,123,145,100)//eyeshape
+
+}
   
-  
+function eye(){
   //fill(255,233,108)//yellow
   fill(163, 187, 26)//green
   ellipse(100,colourheight,35)//eyecolour
@@ -47,23 +62,39 @@ noStroke()
   ellipse(103,95,5)
 
 }
-function cirlcecollection(){
+function circlepink(){
   noStroke()
   fill (224, 133, 141)// pink
   ellipse(30, 45, 25)
-  fill (255, 247, 240)// indside of cirlce pink
+  fill (0)// indside of cirlce pink
   ellipse(27, 45, 10)
-
+}
+function circleorange(){ 
   fill (242, 114, 2)
   ellipse (43, 60, 28)
-  fill(255, 247, 240) 
+  fill(0) 
   ellipse (47, 60, 15) //ornage pupil 
-
+}
+function circleblue(){ 
   fill(109, 184, 191)
   ellipse (45,27,25)
-  fill(255, 247, 240)
+  fill(0)
   ellipse(45,25,12)//bluecicle
+}
+function circlelightgreen(){
+  fill (157, 199, 152)
+  ellipse(33,14,27)
+  fill(0)
+  ellipse(30,17,7)
+}
 
-
+function c2green(){
+  fill (157, 199, 152)
+  ellipse(86.140,28)
 
 }
+
+
+
+
+
