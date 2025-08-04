@@ -1,17 +1,20 @@
 //your parameter variables go here!
-let pupilsize = 10;
+let pupilsize = 20;
 let triX1 = 90;
 let triX2 = 110;
 let pupilheight = 100;
 let colourheight = 100;
-let cellwidth = 150
-let cellheight = 200
+let cellwidth = 250
+let cellheight = 150
+let c2size = 25
+let eyecolour = 163
+
 
 function setup_wallpaper(pWallpaper) {
   //pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.output_mode(GLIDE_WALLPAPER);
   
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.resolution(A3);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
@@ -58,7 +61,7 @@ stroke(100)
   
 function eye(){
   //fill(255,233,108)//yellow
-  fill(163, 187, 26)//green
+  fill(eyecolour, 187, 26)//green
   ellipse(100,colourheight,35)//eyecolour
 
   fill(0)
@@ -111,7 +114,7 @@ function c2pink(){
 
 function c2orange(){
   fill(242, 114, 2)
-  ellipse(165, 175, 20)
+  ellipse(165, 175, c2size)
   fill(0)
   ellipse(168,178,10)
 
@@ -119,12 +122,12 @@ function c2orange(){
 
 function ifs(){
 
-  if (cellwidth < 150){
+  if (cellwidth < 170){
   fill(255,233,108)
   ellipse(100,colourheight,35)//eyecolour
   }
   else{
-    fill(163, 187, 26)//green
+    fill(eyecolour, 187, 26)//green
   ellipse(100,colourheight,35)//eyecolour
 
   fill(0)
