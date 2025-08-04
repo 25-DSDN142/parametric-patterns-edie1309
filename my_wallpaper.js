@@ -1,10 +1,10 @@
 //your parameter variables go here!
-let pupilsize = 30;
+let pupilsize = 10;
 let triX1 = 90;
 let triX2 = 110;
 let pupilheight = 100;
 let colourheight = 100;
-let cellwidth = 200
+let cellwidth = 150
 let cellheight = 200
 
 function setup_wallpaper(pWallpaper) {
@@ -35,6 +35,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   c2green()
   c2pink ()
   c2orange()
+  ifs()
 
 
 }
@@ -116,3 +117,22 @@ function c2orange(){
 
 }
 
+function ifs(){
+
+  if (cellwidth < 150){
+  fill(255,233,108)
+  ellipse(100,colourheight,35)//eyecolour
+  }
+  else{
+    fill(163, 187, 26)//green
+  ellipse(100,colourheight,35)//eyecolour
+
+  fill(0)
+  ellipse(100,pupilheight,pupilsize)//pupil
+
+  fill (230)
+  ellipse(103,95,5)
+
+  }
+
+}
