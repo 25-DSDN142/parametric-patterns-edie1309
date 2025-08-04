@@ -8,7 +8,7 @@ let cellwidth = 250
 let cellheight = 150
 let c2size = 25
 let eyecolour = 163
-
+let colour2 = 187
 
 function setup_wallpaper(pWallpaper) {
   //pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -61,7 +61,7 @@ stroke(100)
   
 function eye(){
   //fill(255,233,108)//yellow
-  fill(eyecolour, 187, 26)//green
+  fill(eyecolour, colour2, 26)//green
   ellipse(100,colourheight,35)//eyecolour
 
   fill(0)
@@ -127,7 +127,7 @@ function ifs(){
   ellipse(100,colourheight,35)//eyecolour
   }
   else{
-    fill(eyecolour, 187, 26)//green
+    fill(eyecolour, colour2, 26)//green
   ellipse(100,colourheight,35)//eyecolour
 
   fill(0)
