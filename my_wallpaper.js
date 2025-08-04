@@ -16,7 +16,7 @@ function setup_wallpaper(pWallpaper) {
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
-  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.cell_height = 300;
   pWallpaper.grid_settings.row_offset  = 50;
 }
 
@@ -33,6 +33,8 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   circleblue()
   circlelightgreen()
   c2green()
+  c2pink ()
+  c2orange()
 }
 
 function eyeshape(){
@@ -90,10 +92,26 @@ function circlelightgreen(){
 
 function c2green(){
   fill (157, 199, 152)
-  ellipse(86.140,28)
+  ellipse(170,140,28)
+  fill(0)
+  ellipse(174,140,17)
 
 }
 
+function c2pink(){
+  fill (224, 133, 141)
+  ellipse (158, 160, 25)
+  fill(0)
+  ellipse(155, 163,13)
+}
+
+function c2orange(){
+  fill(242, 114, 2)
+  ellipse(165, 175, 20)
+  fill(0)
+  ellipse(168,178,10)
+
+}
 
 
 
