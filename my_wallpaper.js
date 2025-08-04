@@ -1,22 +1,22 @@
 //your parameter variables go here!
-let pupilsize = 20;
+let pupilsize = 30;
 let triX1 = 90;
 let triX2 = 110;
 let pupilheight = 100;
 let colourheight = 100;
-
-
+let cellwidth = 200
+let cellheight = 200
 
 function setup_wallpaper(pWallpaper) {
   //pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.output_mode(GLIDE_WALLPAPER);
   
-  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 200;
-  pWallpaper.grid_settings.cell_height = 300;
+  pWallpaper.grid_settings.cell_width  = cellwidth;
+  pWallpaper.grid_settings.cell_height = cellheight;
   pWallpaper.grid_settings.row_offset  = 50;
 }
 
@@ -35,7 +35,10 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   c2green()
   c2pink ()
   c2orange()
+
+
 }
+
 
 function eyeshape(){
 strokeWeight(4)
@@ -112,7 +115,4 @@ function c2orange(){
   ellipse(168,178,10)
 
 }
-
-
-
 
